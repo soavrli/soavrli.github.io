@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+  <title>최동혁</title>
+  <meta charset="utf-8">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script src="parallax/parallax.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
+
+  <link href="https://fonts.googleapis.com/css?family=Song+Myung" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=
+  Nanum+Pen+Script|Gothic+A1|Nanum+Myeongjo|Noto+Sans+KR|Song+Myung" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+<style type="text/css">
+
+
+.container {
+    width: 100px;
+    margin: 0 auto;
+    max-width: 90%;
+    -webkit-transform: translateZ(1000px);
+    transform: translateZ(1000px);
+}
+
+
+
+body {
+	background-color: white;
+	margin: 0;
+}
+
+
+div {
+	height: 100%;
+	width: 100%;
+}
+
+
+
+p {
+	padding: 30px;
+	font-family: 'Nanum Pen Script', cursive;
+	letter-spacing: 5px;
+	text-align: left;
+	font-size: 20px;
+	padding-left: 100px;
+}
+
+.parallax-window {
+	position: relative;
+    min-height: 50vw;
+    background: transparent;
+    width: 50vw;
+    margin: 5vw;
+    padding-top: 6vw;
+}
+
+.parallax-window1 {
+    min-height: 40vw;
+    background: transparent;
+    width: 100%;
+}
+
+.parallax-window2 {
+    min-height: 20vw;
+    background: transparent;
+    width: 30%;
+    display: inline-flex;
+    margin-left: 20px;
+}
+
+.image2 {
+	width: 30vw;
+	height: 30vw;
+	padding: 10vw;
+}
+
+
+@keyframes fadein {
+from {opacity: 0;}
+to {opacity: 1;}
+}
+
+
+.글 h1 {
+  font-size: 20px;
+  color: black;
+  height: 50px;
+  width: 100vw;
+  font-weight: bolder;
+  font-family: 'Song Myung', serif;
+  padding-top: 10px;
+  padding-left: 50px;
+  text-align: left;
+}
+
+.글 p {
+  color: black;
+  font-size: 10px;
+  padding-left: 100px;
+  font-family: 'Song Myung', serif;
+  text-align: left;
+  padding-left: 150px;
+}
+
+
+.inline {
+	display: flex;
+	padding-left:8vw;
+
+}
+
+.container {
+  position: relative;
+  width: 50%;
+
+}
+
+.image {
+  display: block;
+  width: 80%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  width: 80%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: white;
+}
+
+.container:hover .overlay {
+  opacity: .8;
+}
+
+.text {
+  color: black;
+  font-size: 1.5vw;
+  padding-top: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+    font-family: 'Song Myung', serif;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.text h {
+ font-size: 3vw;
+ font-style: bolder;
+}
+
+.text p {
+ font-size: 2vw;
+}
+
+
+.예시작품1 {
+	width: 200px;
+	height: 200px;
+	border-top-left-radius: 30%;
+	border-top-right-radius: 33%;
+	border-bottom-left-radius: 20%;
+	border-bottom-right-radius: 25%;
+	display: flex;
+	position: relative;
+	padding-left: 20px;
+}
+
+.예시작품2 {
+	width: 180px;
+	height: 180px;
+	border-top-left-radius: 33%;
+	border-top-right-radius: 30%;
+	border-bottom-left-radius: 35%;
+	border-bottom-right-radius: 20%;
+	display: flex;
+	position: relative;
+	padding-left: 20px;
+}
+.bgimg-1,{
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bgimg-1 {
+  background-image: url("image/1.png");
+  min-height: 100%;
+}
+
+@media only screen and (max-device-width: 1600px) {
+  .bgimg-1, {
+    background-attachment: scroll;
+    min-height: 400px;
+  }
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+</style>
+</head>
+
+
+
+
+
+
+<body>
+
+
+
+
+<div class="open-image"><img src="image/11.png" style="width:100%; min-height:30%;"></div>
+
+
+  <div class="w3-display-middle" style="white-space:nowrap; padding-left: 10vw; padding-top: 15vw;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">소소한 <span class="w3-hide-small">날</span>소잉스튜디오</span>
+  </div>
+    <div class="w3-display-middle" style="white-space:nowrap; padding-left: 10vw; padding-top: 25vw;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">@sosohan_jaeim
+  </div>
+
+
+  <div class="글"><p><br /></p>
+
+
+
+
+<div class="container" style="float: right;">
+<div class="parallax-window" data-parallax="scroll" data-image-src="image/3.png"></div>
+</div>
+
+
+<div class="글">
+<h1>신청하기</h1>
+<p style="padding-left: 250px;">성함<input type="text" id="input1" placeholder="김소소" ></p>
+<p style="padding-left: 250px;">휴대폰번호<input type="text" id="input1" placeholder="010-1010-2020"></p>
+</div>
+
+
+
+
+
+
+<div class="글">
+	<h1>소개 </h1>
+</div>
+
+<div style="padding-left: 100px;">
+      <p>안녕하세요 소잉 스튜디오 입니다. 재봉틀 공방으로 재봉틀 수업을 진행하고 있습니다.</p>
+    </div>
+
+
+
+
+
+<div class="글">
+	<h1>클래스101으로 이용하는 방법</h1>
+	<div style="padding-left: 100px;">
+      <p>클래스101 App을 통해 언제 어디서든 수강할 수 있는 영상 강의가 제공됩니다.
+(수강 기간 내에 반복해서 무제한 수강할 수 있습니다.)</P>
+<p>수강에 필요한 모든 준비물들이 포함돼 있습니다. 여러 구성중 자신에게 맞는 키트를 선택할 수 있어요.
+</p>
+</div>
+</div>
+
+
+<p><br/>
+
+
+<div class="글">
+		<h1>새로운 커리큘럼에 대한 소개</h1>
+    <p><br/>
+</div>
+<div class="inline">
+
+<div class="container">
+  <img src="image/12.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">
+    	<strong>초급</strong> <br/>
+    	재봉틀의 원리부터 <br/>
+    	천천히 차근히<br/>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="image/13.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">
+    	<strong>중급</strong> <br/>
+    	간단한 물품을 만드는 <br/>
+    	기술까지<br/>
+    </div>
+  </div>
+</div>
+
+<div class="container">
+  <img src="image/14.png" alt="Avatar" class="image">
+  <div class="overlay">
+    <div class="text">
+    	<strong>고급</strong> <br/>
+    	만들고싶은 그것을 <br/>
+    	만들어보세요<br/>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+
+<p><br/></p><p><br/></p>
+
+
+
+<div class="글">
+	<h1>현재 커리큘럼에서의 다양한 예시 작품들과 동기부여 멘트</h1>
+	<h1><br/></h1>
+</div>
+	<div class="inline">
+	<img src="image/8.png" class="예시작품1" style="border-radius: 50%;">
+	<img src="image/1.png" class="예시작품2" style="border-radius: 50%;">
+	<img src="image/15.png" class="예시작품1" style="border-radius: 50%;">
+	<img src="image/16.png" class="예시작품2" style="border-radius: 50%;">
+	</div>
+
+
+	<p>"소잉 스튜디오와 함께 여러분의 소확행을 찾아보아요"</p>
+	<p style="padding-left: 500px;">"여러분이 만들고싶은 그것을 만들어보세요!"</p>
+
+
+	<div class="inline">
+	<img src="image/17.png" class="예시작품1" style="border-radius: 50%;">
+	<img src="image/18.png" class="예시작품2" style="border-radius: 50%;">
+	<img src="image/19.png" class="예시작품1" style="border-radius: 50%;">
+	<img src="image/4.png" class="예시작품2" style="border-radius: 50%;">
+	</div>
+	<p><br/><br/></p>
+
+
+
+<div class="글">
+	<h1>소잉 스튜디오만의 PR과 장점소개</h1>
+  <p>소잉 스튜디오는 다양한 난이도와 여러가지 제품을 위한 키트를 다양하게 제공하는 것이 특징입니다. 그리고 여러분이
+  만들고싶었던 그것을 바로 만들 수 있도록 도와드립니다. 언제든지 문의해주세요. </p>
+</div>
+
+
+
+
+
+<div class="글">
+	<h1>앞으로 추가되거나 혹은 클래스 상세계획</h1>
+  <p>여러분의 피드백을 반영해 다양한 클래스가 앞으로도 열릴 계획입니다. 많은 관심 부탁드립니다.</p>
+</div>
+
+
+<div class="parallax-window2" data-parallax="scroll" data-image-src="image/20.png"></div>
+<div class="parallax-window2" data-parallax="scroll" data-image-src="image/21.png"></div>
+<div class="parallax-window2" data-parallax="scroll" data-image-src="image/22.png"></div>
+<p><br/></p><p><br/></p>
+
+
+
+<div class="글">
+	<h1>Class 101에 대한 설명</h1>
+	      <p>사전 지식은 1도 필요 없어요! 하고 싶은 마음만 있으면 클래스101이 준비해둔 준비물 키트와 모바일 앱을 통해 무엇이든지 시작할 수 있습니다. 앱을 통해 클래스 영상을 시청하고 클래스메이트와 함께 취미의 즐거움을 나눠보세요!</p>
+</div>
+
+
+
+
+<div class="글">
+	<h1>후기란 </h1>
+	      <p>너무 이쁘게 잘만들고 쓰고 있어요!</p>
+        <p>원피스 클래스가 열렸으면 좋겠어요!</p>
+        <p>재봉틀을 대여해서 사용해보고싶어요!</p>
+</div>
+
+
+<div class="parallax-window1" data-parallax="scroll" data-image-src="image/10.png"></div>
+
+
+<script>
+
+
+</script>
+</body>
+</html>
